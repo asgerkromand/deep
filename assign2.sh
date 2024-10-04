@@ -8,5 +8,7 @@
 #SBATCH --partition=brown
 
 module load singularity
+module load CUDA/11.7.0
+module load cuDNN/8.4.1.50-CUDA-11.7.0
 singularity exec --nv /opt/itu/containers/pytorchtransformers/pytorch-24.07-py3-transformers.sif pip install accelerate
 singularity exec --nv /opt/itu/containers/pytorchtransformers/pytorch-24.07-py3-transformers.sif python3 assign_2/ca/run_t5_mlm_torch.py --train_file wookiepedia_scrape.txt --output_dir ~ --validation_split_percentage 1 --model_name_or_path google/flan-t5-base --max_seq_length 512 --do_train --do_eva
