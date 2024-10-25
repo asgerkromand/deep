@@ -9,6 +9,7 @@
 
 module load Anaconda3
 source activate /opt/itu/condaenv/cs/rapu/synth_transformers
+pip install fire
 
 cd induction_heads_assignment  
 python train_transformer.py --n_epoch=25  
