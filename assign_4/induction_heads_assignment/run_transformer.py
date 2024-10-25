@@ -40,9 +40,9 @@ def main(ckpt_file='transformer_model.ckpt', **kwargs):
         total_count += targ.size(0)
         accuracy = correct / targ.size(0) if total_count > 0 else 0 # print for every p
         eval_loss /= len(evals) # print for every p
-        print(f'p: {p}')
-        print(f'Eval: {eval_loss.item():3.3f}')
-        print(f'Accuracy: {accuracy:.3f}')
+        print(f'p - {p}')
+        print(f'Eval - {eval_loss.item():3.3f}')
+        print(f'Accuracy - {accuracy:.3f}')
     eval_loss /= len(evals)
     accuracy = total_correct/ total_count if total_count > 0 else 0
     print(f'Overall Eval: {eval_loss.item():3.3f}')
