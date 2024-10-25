@@ -1,0 +1,14 @@
+Namespace(no_progress_bar=False, log_interval=100, log_format=None, log_file=None, aim_repo=None, aim_run_hash=None, tensorboard_logdir=None, wandb_project=None, azureml_logging=False, seed=1, cpu=False, tpu=False, bf16=False, memory_efficient_bf16=False, fp16=False, memory_efficient_fp16=False, fp16_no_flatten_grads=False, fp16_init_scale=128, fp16_scale_window=None, fp16_scale_tolerance=0.0, on_cpu_convert_precision=False, min_loss_scale=0.0001, threshold_loss_scale=None, amp=False, amp_batch_retries=2, amp_init_scale=128, amp_scale_window=None, user_dir=None, empty_cache_freq=0, all_gather_list_size=16384, model_parallel_size=1, quantization_config_path=None, profile=False, reset_logging=False, suppress_crashes=False, use_plasma_view=False, plasma_path='/tmp/plasma', criterion='cross_entropy', tokenizer=None, bpe=None, optimizer=None, lr_scheduler='fixed', scoring='bleu', task='translation', source_lang='hsb', target_lang='dsb', trainpref='train_dsb_hsb_62564', validpref='devtest_dsb_hsb_2022/valid_dsb_hsb', testpref='devtest_dsb_hsb_2022/dev_dsb_hsb_new', align_suffix=None, destdir='/Users/asgerkromand/Library/CloudStorage/OneDrive-UniversityofCopenhagen/0. SDS/1 deep learning and nlp/assignments_new/deep/assign_3', thresholdtgt=0, thresholdsrc=0, tgtdict=None, srcdict=None, nwordstgt=-1, nwordssrc=-1, alignfile=None, dataset_impl='mmap', joined_dictionary=False, only_source=False, padding_factor=8, workers=1, dict_only=False)
+[hsb] Dictionary: 103512 types
+[hsb] train_dsb_hsb_62564.hsb: 62565 sents, 716965 tokens, 0.0% replaced (by <unk>)
+[hsb] Dictionary: 103512 types
+[hsb] devtest_dsb_hsb_2022/valid_dsb_hsb.hsb: 709 sents, 5248 tokens, 18.1% replaced (by <unk>)
+[hsb] Dictionary: 103512 types
+[hsb] devtest_dsb_hsb_2022/dev_dsb_hsb_new.hsb: 700 sents, 8116 tokens, 8.3% replaced (by <unk>)
+[dsb] Dictionary: 104024 types
+[dsb] train_dsb_hsb_62564.dsb: 62565 sents, 736316 tokens, 0.0% replaced (by <unk>)
+[dsb] Dictionary: 104024 types
+[dsb] devtest_dsb_hsb_2022/valid_dsb_hsb.dsb: 709 sents, 5301 tokens, 18.7% replaced (by <unk>)
+[dsb] Dictionary: 104024 types
+[dsb] devtest_dsb_hsb_2022/dev_dsb_hsb_new.dsb: 700 sents, 8351 tokens, 8.38% replaced (by <unk>)
+Wrote preprocessed data to /Users/asgerkromand/Library/CloudStorage/OneDrive-UniversityofCopenhagen/0. SDS/1 deep learning and nlp/assignments_new/deep/assign_3
